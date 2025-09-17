@@ -1,0 +1,10 @@
+name: ci
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+jobs:
+  call:
+    uses: switchtechllc/.github/.github/workflows/reusable-ci.yml@main
+    with:
+      language: auto
